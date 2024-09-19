@@ -1,0 +1,221 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.left-side, .right-side {
+    flex: 1;
+    overflow-y: auto;
+}
+
+.left-side {
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+.right-side {
+    display: flex;
+    align-items: stretch;
+}
+
+.article-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+    width: 100%;
+    height: 100%;
+}
+
+.small-article {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    overflow: hidden;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.small-article:hover {
+    background-color: #f0f0f0;
+}
+
+.read-more-section {
+    text-align: center;
+    padding: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Modal styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Styles for all-articles.html and manage-articles.html */
+.article-list {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.article-item {
+    background-color: #f9f9f9;
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.form-group textarea {
+    height: 150px;
+}
+
+.video-container {
+    width: 100%;
+    overflow-x: scroll;
+    display: flex;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.video-scroll {
+    display: flex;
+}
+
+.video-scroll a {
+    display: inline-block;
+}
+
+.video-scroll img {
+    width: 150px;
+    height: 100px;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.manage-section {
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* Video section styles */
+.video-section {
+    margin-top: 20px;
+}
+
+.video-container {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.video-scroll {
+    display: flex;
+    gap: 20px;
+    padding: 10px 0;
+}
+
+.video-item {
+    flex: 0 0 auto;
+    cursor: pointer;
+}
+
+.video-item img {
+    width: 240px;
+    height: 135px;
+    object-fit: cover;
+}
+
+.video-item h3 {
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+/* Video management styles */
+.video-management {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#add-video-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+#video-list {
+    margin-top: 20px;
+}
+
+.video-item button {
+    margin-left: 10px;
+}

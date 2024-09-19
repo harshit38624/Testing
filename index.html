@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Article Viewer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left-side">
+            <img id="main-image" class="main-image" src="" alt="Main Article Image">
+            <h1 id="main-title"></h1>
+            <div id="main-content"></div>
+        </div>
+
+        <div class="right-side">
+            <div class="article-grid">
+                <div class="small-article" data-index="0">
+                    <img class="small-image" src="" alt="Article 1 Image">
+                    <h2></h2>
+                    <p></p>
+                </div>
+                <div class="small-article" data-index="1">
+                    <img class="small-image" src="" alt="Article 2 Image">
+                    <h2></h2>
+                    <p></p>
+                </div>
+                <div class="small-article" data-index="2">
+                    <img class="small-image" src="" alt="Article 3 Image">
+                    <h2></h2>
+                    <p></p>
+                </div>
+                <div class="small-article" data-index="3">
+                    <img class="small-image" src="" alt="Article 4 Image">
+                    <h2></h2>
+                    <p></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="article-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="modal-title"></h2>
+            <p id="modal-content"></p>
+        </div>
+    </div>
+    
+    <div class="read-more-section">
+        <a href="all-articles.html" class="btn">Read More Articles</a>
+    </div>
+
+    <div class="video-section">
+        <h2>Featured Videos</h2>
+        <div class="video-container">
+            <div id="video-scroll" class="video-scroll">
+                <!-- Video thumbnails will be dynamically added here -->
+            </div>
+        </div>
+    </div>
+
+    <div class="video-management">
+        <a href="manage-videos.html" class="btn">Manage Videos</a>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
